@@ -7,7 +7,7 @@ export default function Routec() {
   return (
     <Router>
       <Routes>
-        {/* <Route path="/" element={<Profile />} /> */}
+        <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
