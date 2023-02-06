@@ -1,15 +1,15 @@
-import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import React from "react";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 
 export default function Routec() {
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="profile" element={<Profile />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
